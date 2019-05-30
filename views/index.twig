@@ -52,12 +52,12 @@
         </div>
     </div>
     <script>
-        $(".mark-day").click(function()){
+        $(".mark-day").click(function(){
             $("#input-dia").val($( this ).attr('data-day'));
-        }
+        });
         $("#datetimepicker12").on("ng.change", function(e, date){
             $("#input-hora").val(date);
-        })
+        });
         $.ajax({
                 method : 'post',
                 utl : '/ajax.php',
@@ -67,7 +67,7 @@
                     Swal.fire({
                         title: "Estado",
                         text: data.msg
-                    })
+                    });
                 }
             });
     </script>
