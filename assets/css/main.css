@@ -26,4 +26,10 @@ body {
     .mark-day {
         width: 100%;
     }
+    .page-footer {
+        height: 70px;
+        margin-top: 35px;
+        background: #dee3ea;
+        color: white;
+    }
  }
