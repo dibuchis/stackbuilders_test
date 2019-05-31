@@ -1,6 +1,9 @@
 <?php
 header('Access-Control-Allow-Origin: *'); 
-require $_SERVER['DOCUMENT_ROOT'] . "/app/vendor/autoload.php";
+require __DIR__ . '../../vendor/autoload.php';
+//require_once dirname(dirname(__FILE__)) . "/vendor/autoload.php";
+
+use PicoPlaca\Controllers\ConsultaController;
 
 /*
 *
@@ -8,21 +11,18 @@ require $_SERVER['DOCUMENT_ROOT'] . "/app/vendor/autoload.php";
 *
 *
 */
-//require $_SERVER['DOCUMENT_ROOT'] . "/youneed_frontend/vendor/autoload.php";
-
-use Controllers\PioPlacaConytroller;
 
 if(isset($_REQUEST)){
     
     $fn = $_REQUEST["fn"];
     
-    $picoplaca = new PioPlacaConytroller();
+    $picoplaca = new ConsultaController();
     
     /*
-    * Get Api Servicios 
+    * Get Consulta Pico y Placa 
     * 
     * @data JSON
-    * return Bolean
+    * return JSON status
     *
     */
     if($fn == 'consulta'){

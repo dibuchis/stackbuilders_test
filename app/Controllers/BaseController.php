@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers;
+namespace PicoPlaca\Controllers;
 
 /**
 *
@@ -11,10 +11,9 @@ namespace Controllers;
 * 
 */
 
-class BaseController{
+abstract class BaseController{
 
-    function init(){
-        
-    }
+    abstract public function __construct();
+    abstract public function init();
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Models;
+namespace PicoPlaca\Models;
 
 /**
 *
@@ -13,8 +13,7 @@ namespace Models;
 
 abstract class Model{
 
-    protected function init(){}
-
-    protected function consultarPlaca(){}
+    abstract public function __construct();
+    abstract public function init();
 
 }

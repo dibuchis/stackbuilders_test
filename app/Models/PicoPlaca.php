@@ -1,8 +1,6 @@
 <?php
 
-namespace Models;
-
-use Models\Model;
+namespace PicoPlaca\Models;
 
 /**
 *
@@ -15,8 +13,9 @@ use Models\Model;
 
 class PicoPlaca extends Model{
 
-    function init(){
-        
+    public function init(){        
+    }
+    public function __construct(){
     }
 
 
