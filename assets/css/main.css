@@ -21,3 +21,9 @@ body {
  box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.23);
  max-width:520px;
  }
+
+ @media (max-width:768px){
+    .mark-day {
+        width: 100%;
+    }
+ }
