@@ -31,4 +31,12 @@ body {
         margin-top: 35px;
         background: #dee3ea;
     }
+    #main-form {
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        /* max-width: 97%; */
+    }
  }
