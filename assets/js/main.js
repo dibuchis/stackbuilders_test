@@ -31,3 +31,10 @@ $.ajax({
         }
     });
 });
+$(document).ready(function(){
+    var d = new Date();
+    var day = d.getDay();
+    $("#input-dia").val(day);
+    $(".mark-day-" + day).removeClass('alert-secondary');
+    $(".mark-day-" + day).addClass('btn-primary');
+});
