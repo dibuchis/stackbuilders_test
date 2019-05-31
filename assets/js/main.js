@@ -13,7 +13,12 @@ $("#consultar").click(function(){
 $.ajax({
         method : 'post',
         url : 'app/ajax.php',
-        data : { fn : 'consulta', placa : $("#input-placa").val() , dia : $("#input-dia").val(), hora : $("#input-hora").val() },
+        data : { 
+            fn : 'consulta', 
+            placa : $("#input-placa").val() ,
+            dia : $("#input-dia").val(), 
+            hora : $("#input-hora").val() 
+        },
         success : function(data) {
             var res = JSON.parse(data);
             console.log(data);
